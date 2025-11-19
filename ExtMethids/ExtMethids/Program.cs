@@ -9,3 +9,9 @@ var PublicPeoples = new List<Person>
 
 };
 
+var A = new Point3D(1, 2, 3);
+var B = new Point3D(4, 6, 8);
+
+Console.WriteLine(Point3DExtension.DistanceOfPoints(A,B));
+
+
