@@ -18,6 +18,28 @@
                 if (number % i == 0) return false;
             return true;
         }
+
+            
+            public static bool IsFibonacci(this int number)
+            {
+                if (number < 0)
+                    return false;
+
+
+                return IsPerfectSquare(5 * number * number + 4) ||
+                       IsPerfectSquare(5 * number * number - 4);
+            }
+
+    
+            private static bool IsPerfectSquare(long n)
+            {
+                if (n < 0)
+                    return false;
+
+                long sqrt = (long)Math.Sqrt(n);
+                return sqrt * sqrt == n;
+            }
         
+
     }
 }

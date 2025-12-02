@@ -32,6 +32,11 @@
             }
             return count;
         }
+        public static int CountOfWordsInString(this string str)
+        {
+            int count = 0;
+
+        }
 
     }
 }
